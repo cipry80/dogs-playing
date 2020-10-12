@@ -1,0 +1,43 @@
+.card-group {
+    display: flex;
+    margin: -10px;
+}
+.card-group.grid {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-group.list {
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: wrap;
+    margin: -10px;
+}
+
+.card-group > * {
+    margin: 10px;
+    min-width: 235px;
+}
+
+.error {
+    text-align: center;
+}
+
+.col {
+    border-radius: 5px;
+    box-shadow: 0 2px #bbbebf;
+    cursor: pointer;
+    height: 150px;
+    margin: 15px;
+    width: calc(25% - 30px);
+}
+
+.card-group.list .col {
+    height: 250px;
+    width: 50%;
+}

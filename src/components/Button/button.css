@@ -1,0 +1,13 @@
+.add-btn {
+    background-color: #78bf45;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 12px;
+    height: 35px;
+    width: 105px;
+}
+
+.add-btn:hover {
+    background-color: #4f931a;
+}

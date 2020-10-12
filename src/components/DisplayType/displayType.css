@@ -1,0 +1,25 @@
+.display-control {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+
+.btn-group {
+    margin-left: 10px;
+}
+
+.btn:first-child {
+    margin-right: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}

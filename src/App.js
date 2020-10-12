@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer, useState, useEffect } from 'react'
+import 'normalize.css'
+import './app.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// components
+import Footer from './components/Footer/Footer'
+
+// containers
+import Header from './containers/Header/Header'
+import Home from './containers/Home/Home'
+
+import { StoreProvider } from './containers/StoreContext/StoreContext'
+
+const App = () => {
+    const [searchKey, setSearch] = useState('')
+
+    const handleOnChange = e => {
+        setSearch(e.target.value)
+    }
+
+    return (
+        <div className="App">
+            <StoreProvider value={{ searchKey, handleOnChange }}>
+                <Header />
+                <div className="wrapper">
+                    <Home />
+                    <Footer />
+                </div>
+            </StoreProvider>
+        </div>
+    )
 }
 
-export default App;
+export default App

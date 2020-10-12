@@ -1,0 +1,81 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    left: 0;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1050;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    pointer-events: none;
+}
+
+.modal-content {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-width: 235px;
+    outline: 0;
+    pointer-events: auto;
+    position: relative;
+    width: 100%;
+}
+
+.modal-header {
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    padding: 15px;
+}
+
+.modal-title {
+    flex: 1;
+    margin: 0;
+}
+
+.close {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    padding: 15px;
+}
+
+.close:hover,
+.close:focus {
+    opacity: 0.6;
+}
+
+.modal-body {
+    align-items: center;
+    display: flex;
+    padding: 15px;
+}
+
+.dog-info {
+    margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 100px auto;
+    }
+}

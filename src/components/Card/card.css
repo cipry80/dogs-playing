@@ -1,0 +1,21 @@
+.card {
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.card-dog-name {
+    color: #41c3e0;
+}
+
+.card-owner-name {
+    color: #ffff;
+}

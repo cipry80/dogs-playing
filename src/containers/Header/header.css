@@ -1,0 +1,29 @@
+.header {
+    height: 55px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+}
+
+.navbar-brand {
+    height: 35px;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.icon-search {
+    cursor: pointer;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
